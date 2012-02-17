@@ -1,4 +1,4 @@
-#define kInAppPurchaseProUpgradeProductId @"com.lyric.speak.fifty"
+#define kInAppPurchaseProUpgradeProductId @"com.silly.lyric.fifty"
 
 #import "InAppPurchaseManager.h"
 

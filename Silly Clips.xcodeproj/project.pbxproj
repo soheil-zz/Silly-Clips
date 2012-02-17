@@ -111,13 +111,13 @@
 		15E15FD713DDCFEE006ABFE6 /* TwitterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterRequest.h; sourceTree = "<group>"; };
 		15E15FD813DDCFEE006ABFE6 /* TwitterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterRequest.m; sourceTree = "<group>"; };
 		15E771F613CB5BEE003B3D56 /* FlipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlipView.xib; sourceTree = "<group>"; };
-		15E7FE8713CACDF0007E1655 /* Lyric Speak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lyric Speak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E7FE8713CACDF0007E1655 /* Silly Clips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Silly Clips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E7FE8B13CACDF0007E1655 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15E7FE8D13CACDF0007E1655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15E7FE8F13CACDF0007E1655 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		15E7FE9313CACDF0007E1655 /* Lyric Speak-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lyric Speak-Info.plist"; sourceTree = "<group>"; };
+		15E7FE9313CACDF0007E1655 /* Silly Clips-Info.plist */ = {isa = PBXFileReference; path = "Silly Clips-Info.plist"; sourceTree = "<group>"; };
 		15E7FE9513CACDF0007E1655 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		15E7FE9713CACDF0007E1655 /* Lyric Speak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lyric Speak-Prefix.pch"; sourceTree = "<group>"; };
+		15E7FE9713CACDF0007E1655 /* Silly Clips-Prefix.pch */ = {isa = PBXFileReference; path = "Silly Clips-Prefix.pch"; sourceTree = "<group>"; };
 		15E7FE9813CACDF0007E1655 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15E7FE9A13CACDF0007E1655 /* iDrinkAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iDrinkAppDelegate.h; sourceTree = "<group>"; };
 		15E7FE9B13CACDF0007E1655 /* iDrinkAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iDrinkAppDelegate.m; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 		15E7FE8813CACDF0007E1655 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15E7FE8713CACDF0007E1655 /* Lyric Speak.app */,
+				15E7FE8713CACDF0007E1655 /* Silly Clips.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -293,9 +293,9 @@
 		15E7FE9213CACDF0007E1655 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				15E7FE9313CACDF0007E1655 /* Lyric Speak-Info.plist */,
+				15E7FE9313CACDF0007E1655 /* Silly Clips-Info.plist */,
 				15E7FE9413CACDF0007E1655 /* InfoPlist.strings */,
-				15E7FE9713CACDF0007E1655 /* Lyric Speak-Prefix.pch */,
+				15E7FE9713CACDF0007E1655 /* Silly Clips-Prefix.pch */,
 				15E7FE9813CACDF0007E1655 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -322,9 +322,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		15E7FE8613CACDF0007E1655 /* Lyric Speak */ = {
+		15E7FE8613CACDF0007E1655 /* Silly Clips */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15E7FEA813CACDF1007E1655 /* Build configuration list for PBXNativeTarget "Lyric Speak" */;
+			buildConfigurationList = 15E7FEA813CACDF1007E1655 /* Build configuration list for PBXNativeTarget "Silly Clips" */;
 			buildPhases = (
 				15E7FE8313CACDF0007E1655 /* Sources */,
 				15E7FE8413CACDF0007E1655 /* Frameworks */,
@@ -334,9 +334,9 @@
 			);
 			dependencies = (
 			);
-			name = "Lyric Speak";
+			name = "Silly Clips";
 			productName = iDrink;
-			productReference = 15E7FE8713CACDF0007E1655 /* Lyric Speak.app */;
+			productReference = 15E7FE8713CACDF0007E1655 /* Silly Clips.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -347,7 +347,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 15E7FE8113CACDEF007E1655 /* Build configuration list for PBXProject "Lyric Speak" */;
+			buildConfigurationList = 15E7FE8113CACDEF007E1655 /* Build configuration list for PBXProject "Silly Clips" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -359,7 +359,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15E7FE8613CACDF0007E1655 /* Lyric Speak */,
+				15E7FE8613CACDF0007E1655 /* Silly Clips */,
 			);
 		};
 /* End PBXProject section */
@@ -483,11 +483,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iDrink/Lyric Speak-Prefix.pch";
+				GCC_PREFIX_HEADER = "iDrink/Silly Clips-Prefix.pch";
 				HEADER_SEARCH_PATHS = "/Users/sman/Documents/iDrink/uservoice-iphone-sdk/**";
-				INFOPLIST_FILE = "iDrink/Lyric Speak-Info.plist";
+				INFOPLIST_FILE = "iDrink/Silly Clips-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Lyric Speak";
+				PRODUCT_NAME = "Silly Clips";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -541,11 +541,11 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iDrink/Lyric Speak-Prefix.pch";
+				GCC_PREFIX_HEADER = "iDrink/Silly Clips-Prefix.pch";
 				HEADER_SEARCH_PATHS = "/Users/sman/Documents/iDrink/uservoice-iphone-sdk/**";
-				INFOPLIST_FILE = "iDrink/Lyric Speak-Info.plist";
+				INFOPLIST_FILE = "iDrink/Silly Clips-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Lyric Speak";
+				PRODUCT_NAME = "Silly Clips";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -565,11 +565,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Soheil Yasrebi";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iDrink/Lyric Speak-Prefix.pch";
+				GCC_PREFIX_HEADER = "iDrink/Silly Clips-Prefix.pch";
 				HEADER_SEARCH_PATHS = "/Users/sman/Documents/iDrink/uservoice-iphone-sdk/**";
-				INFOPLIST_FILE = "iDrink/Lyric Speak-Info.plist";
+				INFOPLIST_FILE = "iDrink/Silly Clips-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Lyric Speak";
+				PRODUCT_NAME = "Silly Clips";
 				PROVISIONING_PROFILE = "1957B817-89C3-4BF6-8BAF-07E74B6D47BE";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1957B817-89C3-4BF6-8BAF-07E74B6D47BE";
 				SDKROOT = iphoneos;
@@ -581,7 +581,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15E7FE8113CACDEF007E1655 /* Build configuration list for PBXProject "Lyric Speak" */ = {
+		15E7FE8113CACDEF007E1655 /* Build configuration list for PBXProject "Silly Clips" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15E7FEA613CACDF1007E1655 /* Debug */,
@@ -591,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		15E7FEA813CACDF1007E1655 /* Build configuration list for PBXNativeTarget "Lyric Speak" */ = {
+		15E7FEA813CACDF1007E1655 /* Build configuration list for PBXNativeTarget "Silly Clips" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15E7FEA913CACDF1007E1655 /* Debug */,

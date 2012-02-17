@@ -289,7 +289,7 @@ static NSString* kAppId = @"116669421761762";
     loadingView = [LoadingView loadingViewInView:self.view];
     NSLog (@"audioRecorderDidFinishRecording:successfully:");
     
-    NSString *urlString = @"http://pubbay.com/pub/speech/lyric.php";
+    NSString *urlString = @"http://pubbay.com/pub/speech/clip.php";
     if (!isAudio) {
         urlString = [[urlString stringByAppendingString:@"?query="]
                      stringByAppendingString: [topField.text stringByAddingPercentEscapesUsingEncoding: NSASCIIStringEncoding]];
