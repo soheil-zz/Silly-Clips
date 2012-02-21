@@ -45,6 +45,10 @@ UITabBarDelegate> {
     NSMutableArray *drinks;
     
     InAppPurchaseManager *inAppPurchaseManager;
+    
+    NSMutableData *data;
+    NSURLConnection *connection;
+    AVAudioPlayer *player;
 }
 
 @property (nonatomic, retain) IBOutlet UITextField *topField;

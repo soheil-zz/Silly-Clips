@@ -355,6 +355,31 @@ static NSString* kAppId = @"116669421761762";
     typeButton.enabled = YES;
     speakButton.enabled = YES;
     ideasButton.enabled = YES;
+    
+    [self getAudioFromNet];
+}
+
+- (void)getAudioFromNet {
+	
+	NSURL *url = [NSURL URLWithString:@"http://funny-stuff.audio4fun.com/download/audioclips/25732.mp3"]; //Example URL to the funny song I've created some time ago ;)
+	NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+	connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	
+}
+
+- (void)connection:(NSURLConnection *)theConnection didReceiveData:(NSData *)incrementalData {
+    if (data==nil) {
+		data = [[NSMutableData alloc] initWithCapacity:2048];
+    }
+    [data appendData:incrementalData];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection*)theConnection {
+	
+	player = [[AVAudioPlayer alloc] initWithData:data error: nil];
+	[player setVolume:0.1];
+	[player play];
+	
 }
 
 - (void) loadOldDrinks

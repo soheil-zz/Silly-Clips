@@ -32,7 +32,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "15E7FE8613CACDF0007E1655"
-            BuildableName = "Lyric Speak.app"
+            BuildableName = "Silly Clips.app"
             BlueprintName = "Silly Clips"
             ReferencedContainer = "container:Silly Clips.xcodeproj">
          </BuildableReference>
@@ -50,7 +50,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "15E7FE8613CACDF0007E1655"
-            BuildableName = "Lyric Speak.app"
+            BuildableName = "Silly Clips.app"
             BlueprintName = "Silly Clips"
             ReferencedContainer = "container:Silly Clips.xcodeproj">
          </BuildableReference>
