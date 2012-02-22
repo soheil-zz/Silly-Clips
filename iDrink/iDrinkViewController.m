@@ -525,9 +525,9 @@ static NSString* kAppId = @"116669421761762";
     {
         TWTweetComposeViewController *tweetSheet = 
         [[TWTweetComposeViewController alloc] init];
-        [tweetSheet setInitialText:[NSString stringWithFormat: @"I looked up the #lyric for #%@!", topField.text]];
+        [tweetSheet setInitialText:[NSString stringWithFormat: @"I looked up the #sillyclip for #%@!", topField.text]];
         [tweetSheet addURL:[NSURL URLWithString:
-                            [NSString stringWithFormat: @"http://www.jog-a-lot.com/lyric-speak/%@", 
+                            [NSString stringWithFormat: @"http://www.jog-a-lot.com/silly-clip/%@", 
                              [topField.text stringByReplacingOccurrencesOfString:@" " withString:@"+"]]]];
         [tweetSheet addImage:[UIImage imageNamed:@"Default.png"]];
         [self presentModalViewController:tweetSheet animated:YES];
@@ -904,12 +904,12 @@ static NSString* kAppId = @"116669421761762";
 - (IBAction)publishStream:(id)sender {
     NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
             kAppId, kAppId,
-            [NSString stringWithFormat: @"http://www.jog-a-lot.com/lyric-speak/%@", topField.text], @"link",
-            @"http://www.jog-a-lot.com/images/lyric-speak-small.gif", @"picture",
-            @"Free Lyric Speak iPhone app", @"name",
-            @"Look up a Lyric", @"caption",
-            [NSString stringWithFormat: @"I just looked up the lyric for %@!", topField.text], @"description",
-            [NSString stringWithFormat: @"I just looked up the lyric for %@!", topField.text], @"message",
+            [NSString stringWithFormat: @"http://www.jog-a-lot.com/silly-clip/%@", topField.text], @"link",
+            @"http://www.jog-a-lot.com/images/silly-clip-small.gif", @"picture",
+            @"Silly Clip iPhone app", @"name",
+            @"Look up a funny clip", @"caption",
+            [NSString stringWithFormat: @"I just looked up a funny clip for %@!", topField.text], @"description",
+            [NSString stringWithFormat: @"I just looked up a funny clip for %@!", topField.text], @"message",
                                    nil];
     
     [_facebook dialog:@"feed" andParams:params andDelegate:self];
