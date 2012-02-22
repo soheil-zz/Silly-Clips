@@ -356,12 +356,12 @@ static NSString* kAppId = @"116669421761762";
     speakButton.enabled = YES;
     ideasButton.enabled = YES;
     
-    [self getAudioFromNet];
+    [self getAudioFromNet: [lines objectAtIndex:1]];
 }
 
-- (void)getAudioFromNet {
-	
-	NSURL *url = [NSURL URLWithString:@"http://funny-stuff.audio4fun.com/download/audioclips/25732.mp3"]; //Example URL to the funny song I've created some time ago ;)
+- (void)getAudioFromNet:(NSString *)mp3 {
+	data = nil;
+	NSURL *url = [NSURL URLWithString:mp3]; //Example URL to the funny song I've created some time ago ;)
 	NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
 	connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	
