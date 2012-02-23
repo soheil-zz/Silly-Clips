@@ -273,7 +273,7 @@ static NSString* kAppId = @"116669421761762";
 {
     NSError *err = nil;
     [audioSession setActive:NO error:&err];
-    AudioServicesPlaySystemSound (cling2);
+    //AudioServicesPlaySystemSound (cling2);
     
     [NSTimer scheduledTimerWithTimeInterval:.5
                                      target:self 
@@ -736,9 +736,9 @@ static NSString* kAppId = @"116669421761762";
     
     
     // pre-loading only
-    AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"cling_1" ofType:@"wav"]], &cling1);
+    //AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"cling_1" ofType:@"wav"]], &cling1);
     
-    AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"cling_2" ofType:@"wav"]], &cling2);
+    //AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"cling_2" ofType:@"wav"]], &cling2);
     //AudioServicesPlaySystemSound (cling1);
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
