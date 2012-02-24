@@ -286,6 +286,8 @@ static NSString* kAppId = @"116669421761762";
 
 - (void) makeRequestAndGetResults:(BOOL)isAudio
 {
+    [player stop];
+    
     loadingView = [LoadingView loadingViewInView:self.view];
     NSLog (@"audioRecorderDidFinishRecording:successfully:");
     
@@ -367,17 +369,19 @@ static NSString* kAppId = @"116669421761762";
 	
 }
 
-- (void)connection:(NSURLConnection *)theConnection didReceiveData:(NSData *)incrementalData {
+- (void)connection:(NSURLConnection *)theConnection didReceiveData:(NSData *)incrementalData
+{
     if (data==nil) {
 		data = [[NSMutableData alloc] initWithCapacity:2048];
     }
     [data appendData:incrementalData];
 }
 
-- (void)connectionDidFinishLoading:(NSURLConnection*)theConnection {
-	
+- (void)connectionDidFinishLoading:(NSURLConnection*)theConnection
+{
+	UInt32 doChangeDefaultRoute = 1;
+    AudioSessionSetProperty(kAudioSessionProperty_OverrideCategoryDefaultToSpeaker, sizeof(doChangeDefaultRoute), &doChangeDefaultRoute);
 	player = [[AVAudioPlayer alloc] initWithData:data error: nil];
-	[player setVolume:0.1];
 	[player play];
 	
 }
